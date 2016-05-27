@@ -2316,18 +2316,8 @@ namespace ts.server {
     }
 
     export class LineLeaf implements LineCollection {
-        udata: any;
-
         constructor(public text: string) {
 
-        }
-
-        setUdata(data: any) {
-            this.udata = data;
-        }
-
-        getUdata() {
-            return this.udata;
         }
 
         isLeaf() {
